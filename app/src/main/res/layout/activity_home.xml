@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/ln"
+        android:layout_marginTop="0dp"
+        android:layout_above="@id/ln2"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+ </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ln2"
+        android:background="#000"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <ImageView
+    android:layout_width="70dp"
+    android:layout_height="70dp"
+            android:id="@+id/map"
+    android:src="@drawable/map_icon"
+    android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp" />
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/time_icon"
+           android:layout_marginHorizontal="50dp"/>
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/about"
+            android:layout_marginEnd="30dp"/>
+    </LinearLayout>
+</RelativeLayout>

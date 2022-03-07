@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/inflate2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/event_image_list_item"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:scaleType="centerCrop"
+        android:background="@android:color/black"
+        android:src="@drawable/event_demo"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:layout_marginTop="20sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:alpha="0.9"
+        app:layout_constraintBottom_toTopOf="@+id/info_list_item2"/>
+
+    <View
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:background="@drawable/text_path_bg"
+        android:backgroundTint="@android:color/white"
+        android:elevation="10sp"
+        app:layout_constraintEnd_toEndOf="@+id/info_list_item2"
+        app:layout_constraintStart_toStartOf="@+id/info_list_item2"
+        app:layout_constraintTop_toTopOf="@+id/info_list_item2"
+        app:layout_constraintBottom_toBottomOf="@+id/info_list_item2">
+
+    </View>
+    <LinearLayout
+        android:id="@+id/info_list_item2"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:background="@android:color/transparent"
+        android:elevation="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/event_image_list_item">
+        <TextView
+            android:id="@+id/eventName_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Event Name"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:padding="10dp"
+            android:textColor="@color/AppPrimary"
+            android:textColorHint="@color/AppPrimary"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="10sp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/eventStartDate_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Event Date"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:textColor="@color/AppPrimary"
+                android:textColorHint="@color/AppPrimary"/>
+            <TextView
+                android:id="@+id/eventEndDate_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Event Date"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:textColor="@color/AppPrimary"
+                android:textColorHint="@color/AppPrimary"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="10sp"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/eventStart_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Event Start Time"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:textColor="@color/AppPrimary"
+                android:textColorHint="@color/AppPrimary"/>
+            <TextView
+                android:id="@+id/eventEnd_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Event End Time"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:textColor="@color/AppPrimary"
+                android:textColorHint="@color/AppPrimary"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

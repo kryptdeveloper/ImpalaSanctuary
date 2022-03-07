@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/etiqueta"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/container"
+        android:orientation="vertical"
+        android:background="@drawable/seo1"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="#90ffffff"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+
+                android:id="@+id/toolbar"
+                android:theme="@style/AppTheme.AppBarOverlay">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:id="@+id/cName"
+                    android:textAllCaps="true"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:textAlignment="center"
+                    android:text="Impala Sanctuary "
+                    android:textSize="30sp"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold"
+                    android:layout_alignParentTop="true"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+
+                    android:gravity="start"
+                    android:text="Kenya Wildlife Service\nP.O. Box 40241 - 00100\nNairobi Kenya\nTel: +254 (20) 2379407\n+254 (20) 2379408\n+254 (20) 2379409\nToll free: 0800597000\nThe receipt is needed at the entry , don't leave it behind!"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Receipt"
+                android:layout_marginRight="5dp"
+                android:textSize="20sp"
+                android:id="@+id/kkk"
+                android:layout_marginTop="5dp"
+                android:textColor="#FFF"
+                android:textStyle="bold"
+                android:background="@color/colorPrimary"
+                android:textAllCaps="true"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/toolbar"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:text="______________________"
+                android:layout_marginRight="5dp"
+                android:textSize="20sp"
+                android:id="@+id/date"
+                android:focusable="false"
+                android:layout_alignParentRight="true"
+               android:layout_below="@id/toolbar"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="loading.."
+                android:layout_marginRight="5dp"
+                android:textSize="20sp"
+                android:id="@+id/datenow"
+                android:focusable="false"
+                android:textStyle="bold"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/toolbar"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Received from"
+                android:textSize="22sp"
+                android:textColor="#000"
+                android:gravity="center"
+                android:layout_alignBottom="@id/nameq"
+                android:id="@+id/text1"
+                android:layout_below="@+id/date"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:hint="______________________"
+                android:layout_marginRight="5dp"
+                android:id="@+id/nameq"
+                android:ellipsize="end"
+                android:paddingLeft="5dp"
+                android:maxLines="1"
+                android:inputType="text"
+                android:textColor="#000"
+
+                android:layout_toEndOf="@+id/text1"
+                android:textSize="22sp"
+                android:layout_below="@+id/date"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="match_parent"
+                android:hint="loading"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/namenow1"
+                android:gravity="center"
+                android:ellipsize="end"
+                android:paddingLeft="5dp"
+                android:maxLines="1"
+                android:inputType="text"
+                android:textColor="#000"
+android:textStyle="bold"
+                android:layout_toEndOf="@+id/text1"
+                android:textSize="25sp"
+                android:layout_below="@+id/date"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="The sum of"
+                android:textSize="22sp"
+                android:textColor="#000"
+                android:gravity="center"
+                android:layout_alignBottom="@id/sum"
+                android:id="@+id/text2"
+                android:layout_below="@+id/text1"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:layout_width="match_parent"
+                android:hint=""
+                android:layout_marginRight="5dp"
+                android:id="@+id/sum"
+                android:ellipsize="end"
+                android:textColor="#000"
+                android:paddingLeft="15dp"
+                android:maxLines="1"
+                android:inputType="text"
+                android:layout_toEndOf="@+id/text2"
+                android:textSize="22sp"
+                android:layout_below="@+id/nameq"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_below="@+id/text2"
+                android:id="@+id/lin1"
+
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+
+                    android:id="@+id/resr"
+
+                    android:layout_marginTop="10dp"
+
+                    android:textSize="22sp"
+                    android:gravity="center"
+                    android:text="__________"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_width="match_parent"
+
+                   android:id="@+id/rrrom"
+                    android:textSize="22sp"
+                    android:gravity="center"
+                    android:text="_______-"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_width="match_parent"
+
+                    android:id="@+id/rrprice"
+
+                    android:textSize="22sp"
+                    android:gravity="center"
+                    android:text="____"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="being payment for"
+                android:textSize="22sp"
+                android:textColor="#000"
+                android:gravity="center"
+                android:layout_alignBottom="@id/paymentFor"
+                android:id="@+id/text3"
+                android:layout_below="@+id/lin1"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="match_parent"
+                android:inputType="text"
+                android:hint="reason"
+               android:text=""
+                android:layout_marginRight="5dp"
+                android:id="@+id/paymentFor"
+                android:textColor="#000"
+                android:paddingLeft="5dp"
+                android:layout_toEndOf="@+id/text3"
+                android:textSize="22sp"
+                android:layout_below="@+id/lin1"
+                android:layout_height="wrap_content" />
+
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:inputType="text"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:scrollbars="vertical"
+                android:layout_marginRight="5dp"
+                android:text="Receipt expires on:"
+                android:textColor="#000"
+                android:paddingLeft="5dp"
+                android:id="@+id/ff"
+                android:textSize="22sp"
+                android:layout_below="@+id/paymentFor"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/datelater"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@+id/ff"
+                android:ellipsize="end"
+
+                android:maxLines="2"
+                android:paddingLeft="5dp"
+
+                android:text="loading"
+                android:textColor="#000"
+                android:textSize="22sp" />
+
+            <ImageView
+                android:layout_width="80dp"
+                android:id="@+id/rImg"
+                android:layout_alignRight="@id/rSign"
+                android:layout_alignLeft="@id/rSign"
+                android:layout_below="@+id/ff"
+                android:scaleType="fitXY"
+                android:layout_height="60dp" />
+            <Button
+                android:layout_width="wrap_content"
+                android:text="Receiver sign"
+                android:textSize="18sp"
+                android:textColor="#000"
+                android:id="@+id/rSign"
+                android:layout_below="@id/rImg"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:text="Visitor Sign"
+                android:layout_marginRight="5dp"
+                android:textSize="18sp"
+                android:textColor="#000"
+                android:id="@+id/pSign"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_height="wrap_content" />
+
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>

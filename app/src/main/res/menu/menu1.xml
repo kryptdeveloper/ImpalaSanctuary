@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:title="Home"
+            android:icon="@drawable/ic_home"
+            android:id="@+id/home1"
+            android:fontFamily="@font/maiandra"
+
+            />
+        <item
+            android:title="Entry Ticket"
+            android:icon="@drawable/basket"
+            android:id="@+id/book"
+            android:fontFamily="@font/maiandra"
+            />
+
+        <item
+            android:title="Picnic Reservations"
+            android:icon="@drawable/ic_baseline_pets"
+            android:id="@+id/reserv3"
+
+            android:fontFamily="@font/maiandra"
+            />
+        <item
+            android:title="Animals"
+            android:icon="@drawable/ic_baseline_pets"
+            android:id="@+id/anim"
+
+            android:fontFamily="@font/maiandra"
+            />
+
+        <item
+            android:title="Map"
+            android:icon="@drawable/promo_code"
+            android:id="@+id/abt"
+            android:fontFamily="@font/maiandra"
+            />
+        <item
+            android:title="Events"
+            android:icon="@drawable/event1"
+            android:id="@+id/events"
+            android:fontFamily="@font/maiandra"
+            />
+        <item
+            android:title="Activities"
+            android:icon="@drawable/activities"
+            android:id="@+id/activities"
+            android:fontFamily="@font/maiandra"
+            />
+<!--        <item-->
+<!--            android:title="Warden"-->
+<!--            android:icon="@drawable/orders"-->
+<!--            android:id="@+id/ward"-->
+<!--            android:fontFamily="@font/maiandra"-->
+<!--            />-->
+    </group>
+    <item android:title="Others"
+        >
+        <menu>
+            <group android:checkableBehavior="single">
+<!--                <item-->
+<!--                    android:title="Status"-->
+<!--                    android:icon="@drawable/status"-->
+<!--                    android:id="@+id/status1"-->
+<!--                    android:fontFamily="@font/maiandra"-->
+<!--                    />-->
+                <item
+                    android:title="Search All Modules"
+                    android:icon="@drawable/status"
+                    android:id="@+id/sert"
+                    android:fontFamily="@font/maiandra"
+                    />
+                <item
+                    android:title="Status and History"
+                    android:icon="@drawable/status"
+                    android:id="@+id/hist"
+                    android:fontFamily="@font/maiandra"
+                    />
+                <item
+                    android:title="Support"
+                    android:icon="@drawable/support"
+                    android:id="@+id/support"
+                    android:fontFamily="@font/maiandra"
+                    />
+                <item
+                    android:title="Feedback"
+                    android:icon="@drawable/support"
+                    android:id="@+id/feedb"
+                    android:fontFamily="@font/maiandra"
+                    />
+                <item
+                    android:title="Help"
+                    android:icon="@drawable/helpp"
+                    android:id="@+id/help1"
+                    android:fontFamily="@font/maiandra"
+                    />
+                <item
+                   android:title="Logout"
+                   android:icon="@drawable/logouticon"
+                   android:id="@+id/logout"
+                   android:fontFamily="@font/maiandra"
+                   />
+            </group>
+        </menu>
+    </item>
+</menu>

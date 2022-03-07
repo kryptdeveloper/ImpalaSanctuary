@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/mnb"
+    android:background="#5174BA"
+    >
+<androidx.cardview.widget.CardView
+    android:layout_width="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    app:cardCornerRadius="30dp"
+
+    android:focusable="true"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            app:cardCornerRadius="30dp"
+
+            android:focusable="true"
+            android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/userr"
+            android:background="#5174BA"
+
+            />
+        </androidx.cardview.widget.CardView>
+        <TextView
+            android:id="@id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginEnd="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="30dp"
+            android:text="Warden Login"
+            android:fontFamily="@font/maiandra"
+            android:textColor="#081A3E"
+            android:textSize="50sp"
+            android:textStyle="bold" />
+    <EditText
+        android:id="@+id/userNamew"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_above="@id/pwd"
+        android:fontFamily="@font/maiandra"
+        android:layout_centerHorizontal="true"
+
+
+        android:background="@drawable/et_custom"
+        android:hint="Enter email here"
+        android:inputType="textEmailAddress"
+        android:padding="5dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textColorHint="#4C330E"
+        android:layout_marginLeft="20dp"
+        android:textSize="15sp"
+        android:layout_marginRight="20dp"
+        />
+
+    <EditText
+        android:id="@+id/pwdw"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="20dp"
+
+        android:background="@drawable/et_custom"
+        android:hint="@string/password"
+        android:fontFamily="@font/maiandra"
+        android:inputType="textPassword"
+
+        android:textColor="@color/colorPrimaryDark"
+        android:textColorHint="#4C330E"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/loginward6"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+
+     android:layout_marginBottom="10dp"
+        android:background="@drawable/btn_custom"
+        android:text="@string/login"
+        android:fontFamily="@font/maiandra"
+        android:textColor="@android:color/white"
+        android:textColorHighlight="@android:color/holo_red_dark"
+        android:textColorLink="@android:color/holo_red_dark" />
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
+</RelativeLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/asin"
+        android:icon="@drawable/ic_pending"
+        android:title="Assigned" />
+
+    <item
+        android:icon="@drawable/ic_done"
+        android:title="Completed"
+        android:id="@+id/comp" />
+
+
+
+
+
+</menu>

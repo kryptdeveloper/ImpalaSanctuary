@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android.support.design="http://schemas.android.com/apk/res-auto"
+    tools:context="com.saf.Dan.accomodation.updateacco"
+    android:orientation="vertical">
+    <TextView
+        android:layout_gravity="center"
+        android:id="@+id/rname1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:text="loading.."/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="50dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/lions"
+
+        android:id="@+id/imgr"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        >
+        <TextView
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="Name: "/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="20dp"
+            android:id="@+id/rname"
+            android:layout_height="wrap_content"
+            android:text="Loading.."/>
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        >
+        <TextView
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="Price: "/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="20dp"
+            android:id="@+id/rprice"
+            android:layout_height="wrap_content"
+            android:text="Loading.."/>
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:text="Description: "/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:textSize="20dp"
+        android:id="@+id/descr"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:text="Loading.."/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        android:layout_gravity="center"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center"
+        >
+        <TextView
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="Availability: "/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:id="@+id/yes"
+            android:background="@color/darkBlueGrey"
+
+            android:gravity="center"
+            android:layout_height="40dp"
+            android:text="YES"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:layout_marginStart="19dp"
+            android:id="@+id/yesno"
+            android:background="@color/darkBlueGrey"
+            android:gravity="center"
+            android:layout_height="40dp"
+            android:text="NOT"
+            />
+
+    </LinearLayout>
+    <TextView
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/answe"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:text="result"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_height="65dp"
+        android:layout_gravity="center"
+        android:id="@+id/rroom"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:text="Update this site"/>
+
+
+
+
+</LinearLayout>

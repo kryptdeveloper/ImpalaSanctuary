@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/add_event_nav_graph"
+    app:startDestination="@id/add_event_f1">
+
+    <fragment
+        android:id="@+id/add_event_f1"
+        android:name="com.saf.planner.add_event_f1"
+        android:label="fragment_add_event_f1"
+        tools:layout="@layout/events_fragment_add_event_f1" >
+        <action
+            android:id="@+id/action_add_event_f1_to_add_event_f2"
+            app:destination="@id/add_event_f2" />
+    </fragment>
+    <fragment
+        android:id="@+id/add_event_f2"
+        android:name="com.saf.planner.add_event_f2"
+        android:label="fragment_add_event_f2"
+        tools:layout="@layout/events_fragment_add_event_f2" >
+        <action
+            android:id="@+id/action_add_event_f2_to_add_event_f3"
+            app:destination="@id/add_event_f3" />
+        <action
+            android:id="@+id/action_add_event_f2_to_add_event_f1"
+            app:destination="@id/add_event_f1" />
+    </fragment>
+    <fragment
+        android:id="@+id/add_event_f3"
+        android:name="com.saf.planner.add_event_f3"
+        android:label="fragment_add_event_f3"
+        tools:layout="@layout/events_fragment_add_event_f3" >
+        <action
+            android:id="@+id/action_add_event_f3_to_add_event_f4"
+            app:destination="@id/add_event_f4" />
+        <action
+            android:id="@+id/action_add_event_f3_to_add_event_f2"
+            app:destination="@id/add_event_f2" />
+    </fragment>
+    <fragment
+        android:id="@+id/add_event_f4"
+        android:name="com.saf.planner.add_event_f4"
+        android:label="fragment_add_event_f4"
+        tools:layout="@layout/events_fragment_add_event_f4" >
+        <action
+            android:id="@+id/action_add_event_f4_to_add_event_f5"
+            app:destination="@id/add_event_f5" />
+        <action
+            android:id="@+id/action_add_event_f4_to_add_event_f3"
+            app:destination="@id/add_event_f3" />
+    </fragment>
+    <fragment
+        android:id="@+id/add_event_f5"
+        android:name="com.saf.planner.add_event_f5"
+        android:label="fragment_add_event_f5"
+        tools:layout="@layout/events_fragment_add_event_f5" >
+        <action
+            android:id="@+id/action_add_event_f5_to_add_event_f4"
+            app:destination="@id/add_event_f4" />
+    </fragment>
+</navigation>

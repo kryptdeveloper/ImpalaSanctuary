@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "765139590474",
+    "firebase_url": "https://impala-c20ea.firebaseio.com",
+    "project_id": "impala-c20ea",
+    "storage_bucket": "impala-c20ea.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:765139590474:android:5729e04df84c1ef4ec35b3",
+        "android_client_info": {
+          "package_name": "me.Impala.Dan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "765139590474-rbib006nka00kggpgh4book70659amei.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "me.Impala.Dan",
+            "certificate_hash": "fab666e4c8f2fd2bdd0dd15baa7ac68a28dde8f1"
+          }
+        },
+        {
+          "client_id": "765139590474-pd6h1cih9391p301jh9gj7q6aamq4vvf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD2w6GH-y9tlLpmO7zFTr79aH7ExkpIXhw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "765139590474-pd6h1cih9391p301jh9gj7q6aamq4vvf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

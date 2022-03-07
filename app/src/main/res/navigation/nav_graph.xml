@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/login_frag">
+
+    <fragment
+        android:id="@+id/login_frag"
+        android:name="com.saf.planner.Login_frag"
+        android:label="Login"
+        tools:layout="@layout/events_fragment_login_frag" >
+        <action
+            android:id="@+id/action_login_frag_to_registration_frag"
+            app:destination="@id/registration_frag" />
+        <action
+            android:id="@+id/action_login_frag_to_forgetPassword_frag"
+            app:destination="@id/forgetPassword_frag" />
+    </fragment>
+    <fragment
+        android:id="@+id/registration_frag"
+        android:name="com.saf.planner.Registration_frag"
+        android:label="Registration Page"
+        tools:layout="@layout/events_fragment_registration_frag" >
+        <action
+            android:id="@+id/action_registration_frag_to_login_frag"
+            app:destination="@id/login_frag" />
+    </fragment>
+    <fragment
+        android:id="@+id/forgetPassword_frag"
+        android:name="com.saf.planner.ForgetPassword_frag"
+        android:label="fragment_forget_password_frag"
+        tools:layout="@layout/events_fragment_forget_password_frag" >
+        <action
+            android:id="@+id/action_forgetPassword_frag_to_login_frag"
+            app:destination="@id/login_frag" />
+    </fragment>
+</navigation>

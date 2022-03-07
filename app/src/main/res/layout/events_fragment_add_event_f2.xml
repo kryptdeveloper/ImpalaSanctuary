@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.saf.planner.add_event_f2"
+    android:background="@drawable/bg_main">
+    <LinearLayout
+        android:id="@+id/f2_l"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/next_btn_f2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:orientation="vertical">
+        <Spinner
+            android:id="@+id/event_Type_f2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Select Here"
+            android:gravity="center"
+            android:spinnerMode="dropdown"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/black"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:background="@android:color/darker_gray"
+            android:padding="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/time_linear_add_event_f2"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/time_linear_add_event_f2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/event_Type_f2"
+            app:layout_constraintBottom_toTopOf="@+id/event_date_f2">
+
+            <TextView
+                android:id="@+id/event_Start_time_f2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Choose Start Time"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black"
+                android:background="@android:color/white"
+                android:padding="8dp"
+                android:layout_marginRight="5dp"
+                android:clickable="true" />
+
+            <TextView
+                android:id="@+id/event_End_time_f2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Choose End Time"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black"
+                android:background="@android:color/white"
+                android:padding="8dp"
+                android:layout_marginLeft="5dp"
+                android:clickable="true"/>
+        </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/date_linear_add_event_f2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="24dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/time_linear_add_event_f2"
+        app:layout_constraintBottom_toTopOf="@+id/event_no_guest_f2">
+        <TextView
+            android:id="@+id/event_StartDate_f2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Choose Start Date"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/black"
+            android:background="@android:color/white"
+            android:padding="8dp"
+            android:layout_marginRight="5dp"
+            android:clickable="true"/>
+        <TextView
+            android:id="@+id/event_EndDate_f2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Choose End Date"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/black"
+            android:background="@android:color/white"
+            android:padding="8dp"
+            android:layout_marginLeft="5dp"
+            android:clickable="true"/>
+    </LinearLayout>
+
+
+
+        <EditText
+            android:id="@+id/event_no_guest_f2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Approximately No of Guests"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/black"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:background="@android:color/white"
+            android:padding="10dp"
+            android:inputType="numberDecimal"
+            android:maxEms="3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/event_date_f2"
+            app:layout_constraintBottom_toTopOf="@+id/next_btn_f2"/>
+    </LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/next_btn_f2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginRight="80dp"
+        android:text="Next"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/f2_l"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@android:color/white"/>
+
+    <ProgressBar
+        android:id="@+id/progrerss_add_event_f2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:backgroundTint="@color/AppPrimary"
+        android:minWidth="60dp"
+        android:minHeight="60dp"
+        android:visibility="gone"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

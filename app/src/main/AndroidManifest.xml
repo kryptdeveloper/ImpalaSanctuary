@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.planner">
+    <!-- FOR INTERNET -->
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- FOR CAMERA SERVICES -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission
+        android:name="android.permission.QUERY_ALL_PACKAGES"
+        tools:ignore="QueryAllPackagesPermission" />
+
+    <uses-feature
+        android:name="android.hardware.camera.any"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" /> <!-- FOR READ EXTERNAL STORAGE -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> <!-- FOR WRITE IN EXTERNAL SERVICES -->
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:node="replace" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name="com.saf.clientFeedback.MainActivity">
+
+        </activity>
+        <activity android:name="com.saf.clientFeedback.SignUp" />
+        <activity android:name="com.saf.clientFeedback.Login" />
+        <activity android:name="com.saf.clientFeedback.UserProfile" />
+        <activity android:name="com.saf.clientFeedback.ChatWithAdmin"/>
+
+        <activity android:name="com.saf.Dan.Warden.compActivity"></activity>
+        <activity android:name="com.saf.Dan.Warden.recActivity" />
+        <activity android:name="com.saf.Dan.Warden.wadActivity" />
+
+        <activity android:name="com.saf.Dan.accomodation.updateacco" />
+        <activity android:name="com.saf.Dan.accomodation.ViewData2" />
+        <activity
+            android:name="com.saf.Dan.Search"
+            android:theme="@style/AppThemenew" />
+        <activity android:name="com.saf.Dan.MyCustomAppIntro" />
+        <activity android:name="com.saf.Dan._reservations" />
+        <activity android:name="com.saf.Dan.activities.MainActivity" />
+        <activity android:name="com.saf.Dan.activities.UploadData" />
+        <activity android:name="com.saf.Dan.activities.ViewData" />
+        <activity
+            android:name="com.saf.Dan.History.VisitingHistory"
+            android:theme="@style/AppTheme.ActionBar" />
+        <activity
+            android:name="com.saf.Dan.wadspecs.MainActivity"
+            android:theme="@style/AppTheme.ActionBar" />
+        <activity
+            android:name="com.saf.Dan.book_Payment"
+            android:theme="@style/AppThemenew" />
+        <activity android:name="com.saf.Dan._receipt" />
+        <activity android:name="com.saf.Dan.Whatsapp" />
+        <activity android:name="com.saf.Dan.Status" />
+        <activity android:name="com.saf.Dan.tabs.admin_replace" />
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_stat_ic_notification" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent" />
+
+        <activity
+            android:name="com.saf.Dan.finance.MainActivity"
+            android:theme="@style/AppThemenew" />
+        <activity android:name="com.saf.mpesa_android_sdk.MainActivity" />
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemenew" />
+        <activity
+            android:name="com.saf.Dan.accomodation.ViewData"
+            android:theme="@style/AppThemenew" />
+        <activity
+            android:name="com.saf.Dan.accomodation.UploadData"
+            android:theme="@style/AppThemenew" />
+        <activity android:name="com.saf.Dan.accomodation.MainActivity" />
+        <activity
+            android:name="com.saf.Dan.updateAnimals.ViewData"
+            android:theme="@style/AppThemenew" />
+        <activity
+            android:name="com.saf.Dan.updateAnimals.UploadData"
+            android:theme="@style/AppThemenew" />
+        <activity android:name="com.saf.Dan.wardenlog" />
+        <activity android:name="com.saf.Dan.book" />
+        <activity android:name="com.saf.Dan.homeActivity" />
+        <activity
+            android:name="com.saf.Dan.MainActivity2"
+            android:theme="@style/AppTheme.ActionBar" />
+        <activity
+            android:name="com.saf.Dan._receipt_MainActivity"
+            android:theme="@style/AppTheme.ActionBar" />
+        <activity android:name="com.saf.Dan.wardenInfo" />
+        <activity android:name="com.saf.Dan.UploadActivity" />
+        <activity
+            android:name="com.saf.Dan.Attendance"
+            android:theme="@style/AppThemenew" />
+        <activity
+            android:name="com.saf.Dan.home.DetailActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.saf.Dan.reports"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.saf.Dan.FeedbackActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.saf.Dan.WelcomeActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.saf.Dan.LoginActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.saf.Dan.RegisterActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.saf.Dan.Warden.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.saf.Dan.tabs.MainActivity"
+            android:theme="@style/AppTheme1" />
+        <activity
+            android:name="com.saf.Dan.tabs.UserApprovals.MainActivity"
+            android:theme="@style/AppTheme1" />
+        <activity android:name="com.saf.Dan.updateAnimals.MainActivity" />
+
+        <service android:name="com.saf.mpesa_android_sdk.MPESAMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.saf.mpesa_android_sdk.MPESAInstanceIDService"
+            android:stopWithTask="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity android:name="com.saf.planner.NotificationActivity">
+            <meta-data
+                android:name="com.google.firebase.messaging.default_notification_channel_id"
+                android:value="@string/default_notification_channel_id" />
+        </activity>
+
+        <service
+            android:name="com.saf.planner.MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name="com.saf.planner.Main4Activity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name="com.saf.planner.Main3Activity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name="com.saf.planner.Main2Activity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name="com.saf.planner.MainActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+    </application>
+
+</manifest>

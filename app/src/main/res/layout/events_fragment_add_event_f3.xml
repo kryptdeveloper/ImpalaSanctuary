@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.saf.planner.add_event_f3"
+    android:background="@drawable/bg_main">
+
+    <LinearLayout
+        android:id="@+id/add_l_f3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:padding="20dp"
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/event_description_f3"
+
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@android:color/white"
+            android:hint="Enter Event Description"
+            android:gravity="start"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:textColorHint="@android:color/black"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/TextColor_Primary"
+            android:text="Additional Features:"
+            android:layout_marginTop="15dp"
+            android:textAlignment="center"
+            android:textSize="20sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/TextColor_Primary"
+            android:text="Add some features like assistance,decoration and food arrangements.You can choose as your requirements."
+            android:layout_margin="5dp"
+            android:gravity="start"
+            android:textSize="16sp"/>
+        <CheckBox
+            android:id="@+id/event_assistance_f3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Everybody invited?"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@android:color/white"/>
+        <CheckBox
+            android:id="@+id/event_decoration_f3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Need Decoration ?"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@android:color/white"/>
+        <CheckBox
+            android:id="@+id/event_food_f3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Food Arrangement ?"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@android:color/white"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/next_btn_f3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="80dp"
+        android:text="Next"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/add_l_f3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@android:color/white"/>
+
+    <ProgressBar
+        android:id="@+id/progress_add_event_f3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:backgroundTint="@color/AppPrimary"
+        android:minWidth="60dp"
+        android:minHeight="60dp"
+        android:visibility="gone"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

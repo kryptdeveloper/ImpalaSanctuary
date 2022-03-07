@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/approve1"
+        android:icon="@drawable/approved1"
+        android:title="Approved"
+        app:showAsAction="always"
+     />
+    <item android:id="@+id/logoutt"
+        android:icon="@drawable/logouticon"
+        android:title="Log out"
+        app:showAsAction="always"
+       />
+</menu>

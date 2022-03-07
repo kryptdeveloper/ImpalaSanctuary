@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_nav_graph"
+    app:startDestination="@id/home_frag">
+
+    <fragment
+        android:id="@+id/home_frag"
+        android:name="com.saf.planner.home_frag"
+        android:label="fragment_home_frag"
+        tools:layout="@layout/events_fragment_home_frag" >
+        <action
+            android:id="@+id/action_home_frag_to_edit_profile_frag"
+            app:destination="@id/edit_profile_frag" />
+        <action
+            android:id="@+id/action_home_frag_to_about_us_frag"
+            app:destination="@id/about_us_frag" />
+    </fragment>
+    <fragment
+        android:id="@+id/upcoming_frag"
+        android:name="com.saf.planner.upcoming_frag"
+        android:label="fragment_upcoming_frag"
+        tools:layout="@layout/events_fragment_upcoming_frag" >
+        <action
+            android:id="@+id/action_upcoming_frag_to_upcomingEventDetails"
+            app:destination="@id/upcomingEventDetails" />
+    </fragment>
+    <fragment
+        android:id="@+id/completed_frag"
+        android:name="com.saf.planner.completed_frag"
+        android:label="fragment_completed_frag"
+        tools:layout="@layout/events_fragment_completed_frag" />
+    <fragment
+        android:id="@+id/cancelled_frag"
+        android:name="com.saf.planner.cancelled_frag"
+        android:label="fragment_cancelled_frag"
+        tools:layout="@layout/events_fragment_cancelled_frag" />
+    <fragment
+        android:id="@+id/edit_profile_frag"
+        android:name="com.saf.planner.edit_profile_frag"
+        android:label="Edit Profile"
+        tools:layout="@layout/events_fragment_edit_profile_frag" >
+        <action
+            android:id="@+id/action_edit_profile_frag_to_home_frag"
+            app:destination="@id/home_frag" />
+    </fragment>
+    <fragment
+        android:id="@+id/about_us_frag"
+        android:name="com.saf.planner.about_us_frag"
+        android:label="About us"
+        tools:layout="@layout/events_fragment_about_us_frag" >
+        <action
+            android:id="@+id/action_about_us_frag_to_home_frag"
+            app:destination="@id/home_frag" />
+    </fragment>
+    <fragment
+        android:id="@+id/upcomingEventDetails"
+        android:name="com.saf.planner.UpcomingEventDetails"
+
+        android:label="fragment_upcoming_event_details"
+        tools:layout="@layout/events_fragment_upcoming_event_details" >
+        <action
+            android:id="@+id/action_upcomingEventDetails_to_upcoming_frag"
+            app:destination="@id/upcoming_frag" />
+        <action
+            android:id="@+id/action_upcomingEventDetails_to_inviteUser"
+            app:destination="@id/inviteUser" />
+        <action
+            android:id="@+id/action_upcomingEventDetails_to_guestList"
+            app:destination="@id/guestList" />
+    </fragment>
+    <fragment
+        android:id="@+id/inviteUser"
+        android:name="com.saf.planner.InviteUser"
+        android:label="fragment_invite_user"
+        tools:layout="@layout/events_fragment_invite_user" >
+        <action
+            android:id="@+id/action_inviteUser_to_upcomingEventDetails"
+            app:destination="@id/upcomingEventDetails" />
+    </fragment>
+    <fragment
+        android:id="@+id/guestList"
+        android:name="com.saf.planner.GuestList"
+        android:label="Guest List"
+        tools:layout="@layout/events_fragment_guest_list" >
+        <action
+            android:id="@+id/action_guestList_to_upcomingEventDetails"
+            app:destination="@id/upcomingEventDetails" />
+        <action
+            android:id="@+id/action_guestList_to_sendUpdateFrag"
+            app:destination="@id/sendUpdateFrag" />
+    </fragment>
+    <fragment
+        android:id="@+id/sendUpdateFrag"
+        android:name="com.saf.planner.SendUpdateFrag"
+        android:label="fragment_send_update"
+        tools:layout="@layout/events_fragment_send_update" >
+        <action
+            android:id="@+id/action_sendUpdateFrag_to_upcomingEventDetails"
+            app:destination="@id/upcomingEventDetails" />
+    </fragment>
+</navigation>

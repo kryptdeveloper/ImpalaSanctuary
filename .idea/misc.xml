@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Stuff/dan/Impala Sanctuary/app/src/main/res/drawable-ldpi/button_style.xml" value="0.2495" />
+        <entry key="..\:/Stuff/dan/Impala Sanctuary/app/src/main/res/drawable-mdpi/ic_baseline_explore_24.xml" value="0.2495" />
+        <entry key="..\:/Stuff/dan/Impala Sanctuary/app/src/main/res/layout/_a_ll_users.xml" value="0.259375" />
+        <entry key="..\:/Stuff/dan/Impala Sanctuary/app/src/main/res/layout/activity_admin.xml" value="0.259375" />
+        <entry key="..\:/Stuff/dan/Impala Sanctuary/app/src/main/res/layout/activity_attendance.xml" value="0.11927083333333334" />
+        <entry key="..\:/Stuff/dan/Impala Sanctuary/app/src/main/res/layout/activity_login.xml" value="0.259375" />
+        <entry key="..\:/Stuff/dan/Impala Sanctuary/app/src/main/res/layout/activity_mainwad.xml" value="0.259375" />
+        <entry key="..\:/Stuff/dan/Impala Sanctuary/app/src/main/res/layout/activity_whatsapp.xml" value="0.259375" />
+        <entry key="..\:/Stuff/dan/Impala Sanctuary/app/src/main/res/layout/assigned.xml" value="0.259375" />
+        <entry key="..\:/Stuff/dan/Impala Sanctuary/app/src/main/res/layout/chat_activity_chat_with_admin.xml" value="0.259375" />
+        <entry key="..\:/Stuff/dan/Impala Sanctuary/app/src/main/res/layout/chat_activity_login.xml" value="0.259375" />
+        <entry key="..\:/Stuff/dan/Impala Sanctuary/app/src/main/res/layout/chat_activity_main.xml" value="0.259375" />
+        <entry key="..\:/Stuff/dan/Impala Sanctuary/app/src/main/res/layout/chat_activity_sign_up.xml" value="0.259375" />
+        <entry key="..\:/Stuff/dan/Impala Sanctuary/app/src/main/res/layout/chat_activity_user_profile.xml" value="0.259375" />
+        <entry key="..\:/Stuff/dan/Impala Sanctuary/app/src/main/res/layout/chat_message_layout.xml" value="0.259375" />
+        <entry key="..\:/Stuff/dan/Impala Sanctuary/app/src/main/res/layout/content_receipt.xml" value="0.259375" />
+        <entry key="..\:/Stuff/dan/Impala Sanctuary/app/src/main/res/layout/events_fragment_add_event_f1.xml" value="0.259375" />
+        <entry key="..\:/Stuff/dan/Impala Sanctuary/app/src/main/res/layout/events_fragment_add_event_f5.xml" value="0.259375" />
+        <entry key="..\:/Stuff/dan/Impala Sanctuary/app/src/main/res/layout/events_nav_drawer_header.xml" value="0.259375" />
+        <entry key="..\:/Stuff/dan/Impala Sanctuary/app/src/main/res/layout/finance_activity_main.xml" value="0.259375" />
+        <entry key="..\:/Stuff/dan/Impala Sanctuary/app/src/main/res/layout/finance_recfragment.xml" value="0.259375" />
+        <entry key="..\:/Stuff/dan/Impala Sanctuary/app/src/main/res/layout/fragment_check.xml" value="0.259375" />
+        <entry key="..\:/Stuff/dan/Impala Sanctuary/app/src/main/res/layout/fragment_upcoming_user.xml" value="0.11927083333333334" />
+        <entry key="..\:/Stuff/dan/Impala Sanctuary/app/src/main/res/layout/incoming.xml" value="0.259375" />
+        <entry key="..\:/Stuff/dan/Impala Sanctuary/app/src/main/res/menu/admin.xml" value="0.259375" />
+        <entry key="..\:/Stuff/dan/Impala Sanctuary/app/src/main/res/menu/bottom_navigation.xml" value="0.259375" />
+        <entry key="..\:/Stuff/dan/Impala Sanctuary/app/src/main/res/menu/chat_room_menu.xml" value="0.259375" />
+        <entry key="..\:/Stuff/dan/Impala Sanctuary/app/src/main/res/menu/chatmenu.xml" value="0.259375" />
+        <entry key="..\:/Stuff/dan/Impala Sanctuary/app/src/main/res/menu/guest_list_menu.xml" value="0.259375" />
+        <entry key="..\:/Stuff/dan/Impala Sanctuary/app/src/main/res/menu/main_menu.xml" value="0.259375" />
+        <entry key="..\:/Stuff/dan/Impala Sanctuary/app/src/main/res/menu/menu1.xml" value="0.259375" />
+        <entry key="..\:/Stuff/dan/Impala Sanctuary/app/src/main/res/menu/menu_main.xml" value="0.259375" />
+        <entry key="..\:/Stuff/dan/Impala Sanctuary/app/src/main/res/menu/menufinance.xml" value="0.259375" />
+        <entry key="..\:/Stuff/dan/Impala Sanctuary/app/src/main/res/menu/menumain.xml" value="0.259375" />
+        <entry key="..\:/Stuff/dan/Impala Sanctuary/app/src/main/res/menu/menumain1.xml" value="0.259375" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

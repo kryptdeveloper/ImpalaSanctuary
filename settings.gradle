@@ -1,0 +1,4 @@
+include ':app'
+rootProject.name='Impala Sanctuary'
+include ':mpesa'
+include ':xml-to-pdf'

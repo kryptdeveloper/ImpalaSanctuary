@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pay"
+    tools:context="com.saf.Dan.book_Payment">
+    <RelativeLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        >
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_marginStart="20dp"
+    android:layout_marginEnd="20dp"
+    android:layout_marginTop="50dp"
+    android:id="@+id/noway"
+    app:cardCornerRadius="@dimen/_7sdp"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/texttt"
+        android:layout_marginStart="10dp"
+        android:layout_height="wrap_content"
+        android:text="Buy Ticket"
+        android:textStyle="bold"
+        android:textSize="28dp"/>
+
+        <TextView
+            android:id="@+id/notee"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:layout_below="@+id/texttt"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="7dp"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:text="\t \t \t \t \t \t*note*  Resident 200/=\tCitizen 300/=\t \t \t \t \t \t\n"
+            android:textColor="@color/darkBlueGrey"
+            android:textSize="18dp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/note"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_below="@+id/notee"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="2dp"
+            android:gravity="center"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="7dp"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:text="\t \t \t \t \t \t\t\t\t\t       Foreigner 500/=\t\tChildren FREE/=\t \t \t \t \t \t\n"
+            android:textColor="@color/darkBlueGrey"
+            android:textSize="18dp"
+            android:textStyle="italic" />
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/kk"
+   android:layout_marginStart="17dp"
+    android:layout_marginTop="15dp"
+    android:layout_below="@+id/note"
+    android:orientation="horizontal">
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Resident"
+            />
+
+
+        <CheckBox
+            android:id="@+id/checkBox2"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="Citizen"
+            />
+
+    <CheckBox
+        android:id="@+id/checkBox3"
+        android:layout_width="wrap_content"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="Foreigner" />
+</LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/kk"
+            android:id="@+id/gfd"
+            android:layout_marginStart="17dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+            <CheckBox
+                android:id="@+id/kids"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Resident Kids"
+                />
+
+            <CheckBox
+                android:id="@+id/kidsf"
+                android:layout_marginStart="48dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Foreign Kids"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:layout_below="@+id/gfd"
+            android:id="@+id/k12"
+            android:layout_centerHorizontal="true"
+            android:background="#9FB9C6"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/kid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="11dp"
+                    android:text="No. Of Resident\nKids:"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/kidno"
+                    android:inputType="number"
+                    android:background="@drawable/text_path_bg"
+                    android:backgroundTint="#D1D5D6"
+                    android:gravity="center"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="18dp"
+
+                    android:hint="here" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/kidf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="11dp"
+                    android:text="No. Of Foreign\nKids:"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/kidnof"
+                    android:inputType="number"
+                    android:background="@drawable/text_path_bg"
+                    android:backgroundTint="#D1D5D6"
+                    android:gravity="center"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="17dp"
+
+                    android:hint="here" />
+            </LinearLayout>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:orientation="horizontal">
+        <TextView
+            android:id="@+id/ress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="11dp"
+            android:text="No. Of Residents:"
+            android:textSize="20dp" />
+
+        <EditText
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/resno"
+            android:inputType="number"
+            android:background="@drawable/text_path_bg"
+            android:backgroundTint="#D1D5D6"
+            android:gravity="center"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="7dp"
+
+            android:hint="here" />
+</LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+android:id="@+id/citt"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="11dp"
+                    android:text="No. Of citizens:"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/citno"
+                    android:layout_marginTop="7dp"
+                    android:inputType="number"
+                    android:background="@drawable/text_path_bg"
+                    android:backgroundTint="#D1D5D6"
+                    android:gravity="center"
+                    android:layout_marginStart="40dp"
+                    android:hint="here" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/forr"
+                    android:textStyle="bold"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="11dp"
+                    android:text="No. Of Foreigner:"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/foreno"
+                    android:layout_marginTop="7dp"
+                    android:inputType="number"
+                    android:background="@drawable/text_path_bg"
+                    android:backgroundTint="#D1D5D6"
+                    android:gravity="center"
+                    android:layout_marginStart="25dp"
+                    android:hint="here" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Amount"
+            android:layout_marginTop="10dp"
+            android:textSize="15dp"
+            android:backgroundTint="@color/darkBlueGrey"
+            android:id="@+id/tat"
+            android:textColor="#FFEB3B"
+            android:textStyle="bold"
+            android:layout_marginBottom="30dp"
+            android:layout_marginStart="20dp"
+            android:layout_below="@+id/k12"
+            />
+
+        <TextView
+            android:id="@+id/total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/k12"
+            android:layout_marginStart="17dp"
+            android:layout_marginTop="20dp"
+            android:layout_toEndOf="@+id/tat"
+            android:text=" "
+            android:layout_marginBottom="30dp"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+
+</androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_below="@+id/noway"
+         android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/mphere"
+            android:orientation="vertical">
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/maiandra"
+                android:layout_marginStart="20dp"
+                android:textStyle="bold"
+
+                android:layout_marginTop="10dp"
+                android:text="Enter Mpesa Code:"
+                android:textSize="25dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/maiandra"
+                android:backgroundTint="#D1D5D6"
+                android:gravity="center"
+                android:padding="20dp"
+                android:background="@drawable/text_path_bg"
+                android:layout_marginTop="10dp"
+                android:id="@+id/mpesacd"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                android:maxLength="10"
+
+                android:inputType="textCapCharacters"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:hint="Using Mpesa pay 500 to Pay bill\n 520520Account no. Impala" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Button
+                android:id="@+id/subm"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:backgroundTint="@color/darkBlueGrey"
+                android:textStyle="bold"
+                android:layout_marginStart="20dp"
+                android:textColor="#F3DF35"
+                android:layout_marginTop="10dp"
+
+                android:layout_marginEnd="20dp"
+                android:text="Submit without Reservation" />
+
+            </LinearLayout>
+            <Button
+                android:id="@+id/submr"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:backgroundTint="@color/darkBlueGrey"
+                android:textStyle="bold"
+                android:layout_marginStart="20dp"
+                android:textColor="#F3DF35"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="30dp"
+                android:layout_marginEnd="20dp"
+                android:text="Submit with Reservation" />
+        </LinearLayout>
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+</ScrollView>
