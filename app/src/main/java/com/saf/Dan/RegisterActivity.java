@@ -341,6 +341,7 @@ public class RegisterActivity extends AppCompatActivity  implements View.OnClick
                                                        databaseS2.child("password").setValue(Password);
                                                         databaseS2.child("purl").setValue(url);
                                                         databaseS2.child("email").setValue(EmailID);
+                                                        databaseS2.child("status").setValue("no");
 
 
 

@@ -1,11 +1,14 @@
 package com.saf.Dan;
 
+import static androidx.constraintlayout.motion.utils.Oscillator.TAG;
+
 import android.app.FragmentManager;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.AdapterView;
@@ -500,8 +503,8 @@ public class LoginActivity extends AppCompatActivity implements AdapterView.OnIt
                                // firebaseUser = firebaseAuth.getCurrentUser();
                             //    final String uid = firebaseUser.getUid();
                                 firebaseDatabase = FirebaseDatabase.getInstance();
-                                databaseReference = firebaseDatabase.getReference("Approved Users").child(phonen);
-                                databaseReference.addValueEventListener(new ValueEventListener() {
+                                databaseReference = firebaseDatabase.getReference("UserApproval").child(phonen);
+                             /**   databaseReference.addValueEventListener(new ValueEventListener() {
                                     @Override
                                     public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                                         if(dataSnapshot.exists())
@@ -519,6 +522,35 @@ public class LoginActivity extends AppCompatActivity implements AdapterView.OnIt
                                     @Override
                                     public void onCancelled(@NonNull DatabaseError databaseError) {
 
+                                    }
+                                });
+*/
+                                databaseReference = firebaseDatabase.getReference("UserApproval").child(phonen).child("status");
+                                //DatabaseReference zone1Ref = zonesRef.child("ZONE_1");
+                                //DatabaseReference zone1NameRef = zone1Ref.child("ZNAME");
+                                databaseReference.addValueEventListener(new ValueEventListener() {
+                                    @Override
+                                    public void onDataChange(DataSnapshot dataSnapshot) {
+                                       String ans=dataSnapshot.getValue(String.class);
+                                        //Toast.makeText(LoginActivity.this, "status: "+dataSnapshot.getValue(String.class), Toast.LENGTH_SHORT).show();
+                                        if(ans.equals("yes")){
+                                         //   Toast.makeText(LoginActivity.this, "inside if"+ ans, Toast.LENGTH_SHORT).show();
+
+                                            sendToMainActivity();
+                                            Toast.makeText(LoginActivity.this, "Approved:: Welcome!", Toast.LENGTH_SHORT).show();
+                                            loadingBar.dismiss();
+                                        }else{
+
+
+                                            Toast.makeText(LoginActivity.this, "You haven't been Approved, be patient please", Toast.LENGTH_LONG).show();
+                                            Toast.makeText(LoginActivity.this, "Try signing in later!", Toast.LENGTH_SHORT).show();
+                                            loadingBar.dismiss();
+                                        }
+                                    }
+
+                                    @Override
+                                    public void onCancelled(DatabaseError databaseError) {
+                                        Log.w(TAG, "onCancelled", databaseError.toException());
                                     }
                                 });
 

@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
     private Pending bending;
     private Done done;
     private wadadd add;
-    private  admin admin;
+   // private  admin admin;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -57,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
         bending = new Pending();
         done = new Done();
         add = new wadadd();
-        admin=new admin();
+     //   admin=new admin();
         tabLayout.setupWithViewPager(viewPager);
 
         ViewPagerAdapter viewPagerAdapter = new ViewPagerAdapter(getSupportFragmentManager(), 0);
@@ -65,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
         viewPagerAdapter.addFragment(bending, "Pending");
         viewPagerAdapter.addFragment(done, "Done");
         viewPagerAdapter.addFragment(add, "Add");
-        viewPagerAdapter.addFragment(admin, "Admin");
+      //  viewPagerAdapter.addFragment(admin, "Admin");
         viewPager.setAdapter(viewPagerAdapter);
 
         tabLayout.getTabAt(0).setIcon(R.drawable.ic_baseline_explore_24);
