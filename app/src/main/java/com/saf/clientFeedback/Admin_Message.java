@@ -5,6 +5,7 @@ public class Admin_Message {
     public String admin, adminMessage;
 
     public Admin_Message(){}
+    //ghhgh
 
     public Admin_Message(String admin, String adminMessage) {
         this.admin = admin;
